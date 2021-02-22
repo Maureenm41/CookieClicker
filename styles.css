@@ -6,11 +6,45 @@ body {
     color: white;
 }
 
-.planets {
-    width: 100px;
+img {
+    display: block;
+    padding-bottom: 10px;
+}
+
+#imgEarth {
+    width: 200px;
     height: auto;
 }
 
+#imgMoon {
+    width: 220px;
+    height: auto;
+}
+
+#imgMars {
+    width: 240px;
+    height: auto;
+}
+
+#imgSaturn {
+    width: 260px;
+    height: auto;
+}
+
+#imgJupiter {
+    width: 280px;
+    height: auto;
+}
+
+#imgSun {
+    width: 300px;
+    height: auto;
+}
+
+#imgSpaceship {
+    width: 100px;
+    height: auto;
+}
 .fa-caret-down
 {
     color:black;
