@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron&display=swap);
+
+body {
+    background-image: url("./assets/galaxy.jpg");
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+.planets {
+    max-width: 100px;
+    height: auto;
+}
