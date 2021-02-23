@@ -194,18 +194,13 @@ for (let index = 0; index < priceUp.length; index++) {
 setInterval(()=>{
     if(true){
         bonus.animate([
-            {transform: "translateX(-150px)"},
-            {transform: "translateX(2500px)"},
-            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
-            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`}
+            {transform: `translate(-5vw,${Math.floor(Math.random()*50)-50}vh)`},
+            {transform: `translate(75vw,${Math.floor(Math.random()*50)-50}vh)`},
+            {transform: `translate(25vw,${Math.floor(Math.random()*50)-50}vh)`},
+            {transform: `translate(105vw,${Math.floor(Math.random()*20)-30}vh)`}
         ],{
-            duration:5000
+            duration:7000
         });
-        /* bonus.animate([
-            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
-            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
-        ],{
-            duration:5000
-        });*/
+
     }
-},5000)
+},10000)
