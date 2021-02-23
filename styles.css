@@ -107,7 +107,9 @@ main:first-child:first-child
 
   p
   {
-    margin-top: 2.51vh;
+    text-align: center;
+    margin-top: 0.01vh;
+    padding-top: 1vh;
     margin-bottom: 4.22vh ;
     text-shadow: 2px 2px 5px rgb(255, 255, 255) ;
   }
@@ -120,9 +122,6 @@ main:first-child:first-child
       width: 70vh;
       text-align: center;
   }
-p{
-    line-height: 0.5vh;
-}
 
 .containerFlex
 {
@@ -156,7 +155,7 @@ p{
 @media all and (min-device-width:480px) and (max-width:1000px)
 {
 .bgMenu2{
-    width: auto;
+
     height: 100vh;
     position: absolute;
     justify-content: center;
@@ -167,10 +166,27 @@ p{
 }
 }
 
+
+
 h3
 {
     font-size: 2.5vh;
     text-align: center;
     margin-top: 1.5vh;
     text-shadow: 2px 2px 5px rgb(255, 6, 6);
+}
+
+.glow {
+    text-align: left;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #d4cbcb, 0 0 30px #969693, 0 0 40px #70706f, 0 0 50px #969693, 0 0 60px #70706F, 0 0 70px #70706F;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #8a8888, 0 0 40px #3c3c3c, 0 0 50px #211f1f, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+    }
 }
