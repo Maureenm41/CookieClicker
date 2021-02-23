@@ -56,6 +56,13 @@ img {
     margin-left: 0;
 }*/
 
+main:first-child:first-child
+{
+    display: block;
+    
+}
+
+
 .visible {
     visibility: visible;
   }
@@ -128,6 +135,7 @@ p{
     padding: center;
     padding-left: 5vh;
     padding-top: 1vh;
+    flex-grow: 1;
     
 }
 
@@ -136,6 +144,33 @@ p{
     background-image: url("./assets/bg.svg");
     background-repeat: no-repeat;
     backdrop-filter: blur(1.5px);
-    background-size: 75vh;
+    background-size: 75vh ;
     width: 90vh;
+    height: 100vh;
+    position: absolute;
+    top: 8vh;
+    right: 5vw;
+    
+}
+
+@media screen and (min-width:500px) and(max-width:1000px)
+{
+.bgMenu2{
+    
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    top: 8vh;
+    margin: 0 auto;
+    right: 0;
+    
+}
+}
+
+h3
+{
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 1.5vh;
+    text-shadow: 2px 2px 5px rgb(255, 6, 6);
 }
