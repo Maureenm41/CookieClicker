@@ -121,7 +121,7 @@ main:first-child:first-child
       text-align: center;
   }
 p{
-    line-height: 1.09vh;
+    line-height: 0.5vh;
 }
 
 .containerFlex
@@ -153,10 +153,10 @@ p{
     
 }
 
-@media screen and (min-width:500px) and(max-width:1000px)
+@media all and (min-device-width:480px) and (max-width:1000px)
 {
 .bgMenu2{
-    
+    width: auto;
     height: 100vh;
     position: absolute;
     justify-content: center;
