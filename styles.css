@@ -66,9 +66,17 @@ img {
     margin-right: 0px;
   }
 
-button
+  button
+
+  {
+    
+    border-radius: 30%;
+    border-color: rgb(219, 219, 37);
+    width: 100px;
+}
+.button1
 {
-    margin-bottom: 1.09vh;
+    margin-top: 1.09vh;
     border-radius: 30%;
     border-color: rgb(219, 219, 37);
     width: 100px;
@@ -85,21 +93,25 @@ button
       margin-left: auto;
   }
 
-  li
+  .upgrade1
   {
-      list-style: none;
+      margin-left: 3vh;
   }
 
   p
   {
-      text-shadow: 2px 2px 5px rgb(255, 255, 255) ;
+    margin-top: 2.51vh;
+    margin-bottom: 4.22vh ;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255) ;
   }
 
   .bgMenu{
       padding-left: 3vh;
       background-image: url("./assets/bg.svg");
+      backdrop-filter: blur(1.5px);
       background-repeat: no-repeat;
-      width: 50vh;
+      width: 70vh;
+      text-align: center;
   }
 p{
     line-height: 1.09vh;
