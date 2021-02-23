@@ -13,37 +13,37 @@ img {
 }
 
 #imgEarth {
-    width: 150px;
+    width: 6vh;
     height: auto;
 }
 
 #imgMoon {
-    width: 100px;
+    width: 5vh;
     height: auto;
 }
 
 #imgMars {
-    width: 250px;
+    width: 7vh;
     height: auto;
 }
 
 #imgSaturn {
-    width: 400px;
+    width: 8vh;
     height: auto;
 }
 
 #imgJupiter {
-    width: 350px;
+    width: 9vh;
     height: auto;
 }
 
 #imgSun {
-    width: 400px;
+    width: 10vh;
     height: auto;
 }
 
 #imgSpaceship {
-    width: 100px;
+    width: 10vh;
     height: auto;
     
 }
@@ -115,4 +115,27 @@ img {
   }
 p{
     line-height: 1.09vh;
+}
+
+.containerFlex
+{
+    display: flex;
+    flex-direction:row column ;
+    align-items: stretch;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: center;
+    padding-left: 5vh;
+    padding-top: 1vh;
+    
+}
+
+.bgMenu2
+{
+    background-image: url("./assets/bg.svg");
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1.5px);
+    background-size: 75vh;
+    width: 90vh;
 }
