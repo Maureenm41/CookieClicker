@@ -68,7 +68,9 @@ img {
 
 button
 {
-    w
+    border-radius: 30%;
+    border-color: rgb(219, 219, 37);
+    width: 100px;
 }
 
   button .row
@@ -78,10 +80,16 @@ button
 
   .menu
   {
-      margin-right: 0rem;
+      margin-right: 0px;
+      margin-left: auto;
   }
 
   li
   {
       list-style: none;
+  }
+
+  p
+  {
+      text-shadow: 2px 2px 5px rgb(255, 255, 255) ;
   }
