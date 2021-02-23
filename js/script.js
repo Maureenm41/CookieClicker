@@ -3,14 +3,16 @@ const ship = document.getElementById("starship");
 const pop = document.getElementById("pop").querySelector("p");
 const builds = document.getElementById("build").querySelectorAll("button");
 const upgrades = document.getElementById("upgrade").querySelectorAll("button");
+const bonus = document.getElementById("bonus");
 
 
 let click = 1;
 
-let price = [100,1000,10000,100000,1000000,10000000]; // price of planets
-let priceUp = [price[0]*10,price[1]*10,price[2]*10,price[3]*10,price[4]*10,price[5]*10,1000] // price of planets upgrades
+let price = [10,1000,10000,100000,1000000,10000000]; // price of planets
+let priceUp = [price[0]*10,price[1]*10,price[2]*10,price[3]*10,price[4]*10,price[5]*10,1000,150]; // price of planets and ship upgrades
 let planets = [1,10,100,1000,10000,100000]; // gains of pop by planet
 let cas = [0,0,0,0,0,0]; // total personal gains
+let auto = 0; // value of auto click
 
 let ratio= [1,2,5,11,18,25];
 
@@ -22,7 +24,7 @@ function check(planet){
                 cas[0]++;
                 console.log("add");
                 pop.innerHTML -= price[0];
-                price[0] = price[0] *2;
+                price[0] = price[0] *1.5;
             }
             break;
         case "Moon":
@@ -30,7 +32,7 @@ function check(planet){
                 cas[1]++;
                 console.log("add");
                 pop.innerHTML -= price[1];
-                price[1] = price[1] *2;
+                price[1] = price[1] *1.5;
             }
             break;
         case "Mars":
@@ -38,7 +40,7 @@ function check(planet){
                 cas[2]++;
                 console.log("add");
                 pop.innerHTML -= price[2];
-                price[2] = price[2] *2;
+                price[2] = price[2] *1.5;
             }
             break;
         case "Saturn":
@@ -46,7 +48,7 @@ function check(planet){
                 cas[3]++;
                 console.log("add");
                 pop.innerHTML -= price[3];
-                price[3] = price[3] *2;
+                price[3] = price[3] *1.5;
             }
             break;
         case "Jupiter":
@@ -54,7 +56,7 @@ function check(planet){
                 cas[4]++;
                 console.log("add");
                 pop.innerHTML -= price[4];
-                price[4] = price[4] *2;
+                price[4] = price[4] *1.5;
             }
             break;
         case "Sun":
@@ -62,7 +64,7 @@ function check(planet){
                 cas[5]++;
                 console.log("add");
                 pop.innerHTML -= price[5];
-                price[5] = price[5] *2;
+                price[5] = price[5] *1.5;
             }
             break;
     }
@@ -75,7 +77,6 @@ builds.forEach(build => {
         console.log(build.innerHTML);
     })
 })
-
 // upgrades buttons
 function upCheck(planet){
     switch (planet){
@@ -127,6 +128,20 @@ function upCheck(planet){
                 priceUp[5] = priceUp[5] *2;
             }
             break;
+        case "Starship":
+            if(pop.innerHTML >= priceUp[6]){
+                click = click * 2;
+                console.log("add");
+                pop.innerHTML -= priceUp[6];
+                priceUp[6] = priceUp[6] *2;
+            }
+        case "Auto":
+            if(pop.innerHTML >= priceUp[7]){
+                auto = auto + 1;
+                console.log("add");
+                pop.innerHTML -= priceUp[7];
+                priceUp[7] = priceUp[7] *1.5;
+            }
     }
 }
 
@@ -157,4 +172,40 @@ function calPeoSec(){
 
 setInterval( function(){
     pop.innerHTML= new Number(pop.innerHTML) + (calPeoSec()/4);
-},250)
+    pop.innerHTML= new Number(pop.innerHTML) + (auto*click)/20;
+},250);
+
+setInterval(()=>{
+for(let index = 0; index < price.length; index++) {
+    if(price[index]<pop.innerHTML){
+        builds[index].disabled = false;
+    } else {
+        builds[index].disabled = true;
+    }
+}
+for (let index = 0; index < priceUp.length; index++) {
+    if(priceUp[index]<pop.innerHTML){
+        upgrades[index].disabled = false;
+    } else {
+        upgrades[index].disabled = true;
+    }
+}},1);
+
+setInterval(()=>{
+    if(true){
+        bonus.animate([
+            {transform: "translateX(-150px)"},
+            {transform: "translateX(2500px)"},
+            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
+            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`}
+        ],{
+            duration:5000
+        });
+        /* bonus.animate([
+            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
+            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
+        ],{
+            duration:5000
+        });*/
+    }
+},5000)
