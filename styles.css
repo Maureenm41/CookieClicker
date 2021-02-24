@@ -1,179 +1,20 @@
-@import url(https://fonts.googleapis.com/css2?family=Orbitron&display=swap);
-
-body {
-    background-image: url("./assets/galaxy.jpg");
-    font-family: 'Orbitron', sans-serif;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-img {
-    display: block;
-    padding-bottom: 10px;
-    margin: auto;
+@font-face{
+    font-family: "Orbitron";
+    src: url("./assets/font/Orbitron-Regular.ttf") format("truetype")
 }
-
-#imgEarth {
-    width: 6vh;
-    height: auto;
+body{
+    font-family: "Orbitron";
 }
-
-#imgMoon {
-    width: 5vh;
-    height: auto;
-}
-
-#imgMars {
-    width: 7vh;
-    height: auto;
-}
-
-#imgSaturn {
-    width: 8vh;
-    height: auto;
-}
-
-#imgJupiter {
-    width: 9vh;
-    height: auto;
-}
-
-#imgSun {
-    width: 10vh;
-    height: auto;
-}
-
-#imgSpaceship {
-    width: 10vh;
-    height: auto;
-    
-}
-/*.fa-caret-down
-{
-    color:black;
-    background-color: rgb(255, 255, 255);
-    font-size: 25px;
-    width: 25px;
-    margin-left: 0;
-}*/
-
-main:first-child:first-child
-{
-    display: block;
-    
-}
-
-
-.visible {
-    visibility: visible;
-  }
-
-  #menu
-  {
-    display: block;
-    margin-right: 0px;
-  }
-
-  button
-
-  {
-    
-    border-radius: 30%;
-    border-color: rgb(219, 219, 37);
-    width: 100px;
-}
-.button1
-{
-    margin-top: 1.09vh;
-    border-radius: 30%;
-    border-color: rgb(219, 219, 37);
-    width: 100px;
-}
-
-  button .row
-  {
-    margin-right: 0rem;
-  }
-
-  .menu
-  {
-      margin-right: 0px;
-      margin-left: auto;
-  }
-
-  .upgrade1
-  {
-      margin-left: 3vh;
-  }
-
-  p
-  {
-    text-align: center;
-    margin-top: 0.01vh;
-    padding-top: 1vh;
-    margin-bottom: 4.22vh ;
-    text-shadow: 2px 2px 5px rgb(255, 255, 255) ;
-  }
-
-  .bgMenu{
-      padding-left: 3vh;
-      background-image: url("./assets/bg.svg");
-      backdrop-filter: blur(1.5px);
-      background-repeat: no-repeat;
-      width: 70vh;
-      text-align: center;
-  }
-
-.containerFlex
-{
+/* HEADER */
+header{
+    /*background-image: url("./assets/head_bg.jpg");*/
+    background-color: black;
     display: flex;
-    flex-direction:row column ;
-    align-items: stretch;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: center;
-    padding-left: 5vh;
-    padding-top: 1vh;
-    flex-grow: 1;
-    
-}
-
-.bgMenu2
-{
-    background-image: url("./assets/bg.svg");
-    background-repeat: no-repeat;
-    backdrop-filter: blur(1.5px);
-    background-size: 75vh ;
-    width: 90vh;
-    height: 100vh;
-    position: absolute;
-    top: 8vh;
-    right: 5vw;
-    
-}
-
-@media all and (min-device-width:480px) and (max-width:1000px)
-{
-.bgMenu2{
-
-    height: 100vh;
-    position: absolute;
-    justify-content: center;
-    top: 8vh;
-    margin: 0 auto;
-    right: 0;
-    
-}
-}
-
-
-
-h3
-{
-    font-size: 2.5vh;
-    text-align: center;
-    margin-top: 1.5vh;
-    text-shadow: 2px 2px 5px rgb(255, 6, 6);
+    flex-direction: row;
 }
 
 .glow {
@@ -189,4 +30,90 @@ h3
     to {
         text-shadow: 0 0 20px #ffffff, 0 0 30px #8a8888, 0 0 40px #3c3c3c, 0 0 50px #211f1f, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
     }
+}
+
+h1{
+    color: white;
+}
+.pop{
+    align-content: flex-end;
+    color: white;
+}
+
+/* IMAGE WIDTHS */
+.sun{
+    width: 20vh;
+}
+.jupiter{
+    width: 15vh;
+}
+.saturn{
+    width: 20vh;
+}
+.mars{
+    width: 15vh;
+}
+.moon{
+    width: 5vh;
+}
+.earth{
+    width: 10vh;
+}
+.starship{
+    width: 20vh;
+}
+
+/* ALL CONTAINER */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url("./assets/space.jpg");
+    padding-top: 5vh;
+}
+
+/* PLANET CONTAINER */
+.divPlan{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* BUTTON CONTAINER */
+.divBut{
+    padding: 5vh;
+    width: 70vh;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/bg.svg");
+    background-repeat: no-repeat;
+    background-size:contain
+}
+/* BUTTON PANEL */
+.build{
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+}
+
+.upgrade{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+}
+button{
+    font-family: "Orbitron";
+    background: none;
+    color: white;
+    font-size: 1vh;
+    border-color: white;
+    border-radius: 1vh;
+    margin-right: 10vh;
+}
+.planet{
+    display: flex;
+    flex-direction: row;
+    color: white;
 }
