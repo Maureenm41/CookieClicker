@@ -116,6 +116,7 @@ img {
     margin-bottom: 3vh;
 }
 
+
 #imgMars {
     width: 7vh;
     height: auto;
@@ -214,7 +215,6 @@ button{
     margin-left: 3%;
 }
 
-
 /*config de la version mobil du menu des amélioration (taille et position*/
 @media all  and (max-width:770px)
 {
@@ -238,7 +238,67 @@ button{
         margin-left: 3%;
         padding-top: 0;
     }
+    /*
     img {
+        display: block;
+        padding-bottom: 10px;
+        margin-left: 1vw;
+        margin-bottom: 1vh;
+        margin-right: 5vw;
+        margin-top: 1vh;
+    }
+     */
+    #imgEarth {
+        width: 6vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgMoon {
+        width: 5vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+
+    #imgMars {
+        width: 7vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgSaturn {
+        width: 13vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgJupiter {
+        width: 9vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgSun {
+        width: 15vw;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+    .starship{
+        display: block;
+        padding-left: 42vw;
         display: block;
         padding-bottom: 10px;
         margin: auto;
