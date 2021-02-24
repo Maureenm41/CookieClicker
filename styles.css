@@ -105,31 +105,46 @@ img {
 #imgEarth {
     width: 6vh;
     height: auto;
+    margin-left: 1vh;
+    margin-top: 10vh;
 }
 
 #imgMoon {
     width: 5vh;
     height: auto;
+    margin-left: 15vh;
+    margin-bottom: 3vh;
 }
 
 #imgMars {
     width: 7vh;
     height: auto;
+    margin-left: 6vh;
+    margin-top: 10vh;
 }
 
 #imgSaturn {
-    width: 8vh;
+    width: 13vh;
     height: auto;
+    margin-left: 3vh;
+    margin-bottom: 10vh;
 }
 
 #imgJupiter {
     width: 9vh;
     height: auto;
+    margin-left: 3vh;
+    margin-top: 10vh;
 }
 
 #imgSun {
-    width: 10vw;
+    width: 15vw;
     height: auto;
+}
+
+.planets
+{
+    margin-top: 20vh;
 }
 
 #imgSpaceship {
