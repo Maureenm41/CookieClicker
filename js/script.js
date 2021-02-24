@@ -1,6 +1,6 @@
 
 const ship = document.getElementById("starship");
-const pop = document.getElementById("pop").querySelector("p");
+const pop = document.getElementById("pop");
 const builds = document.getElementById("build").querySelectorAll("button");
 const upgrades = document.getElementById("upgrade").querySelectorAll("button");
 const bonus = document.getElementById("bonus");
@@ -179,15 +179,20 @@ setInterval(()=>{
 for(let index = 0; index < price.length; index++) {
     if(price[index]<pop.innerHTML){
         builds[index].disabled = false;
+        builds[index].style.opacity = "1"
+        
     } else {
         builds[index].disabled = true;
+        builds[index].style.opacity = "0.5"
     }
 }
 for (let index = 0; index < priceUp.length; index++) {
     if(priceUp[index]<pop.innerHTML){
         upgrades[index].disabled = false;
+        builds[index].style.opacity = "1"
     } else {
         upgrades[index].disabled = true;
+        upgrades[index].style.opacity = "0.5"
     }
 }},1);
 
@@ -199,7 +204,7 @@ setInterval(()=>{
             {transform: `translate(25vw,${Math.floor(Math.random()*50)-50}vh)`},
             {transform: `translate(105vw,${Math.floor(Math.random()*20)-30}vh)`}
         ],{
-            duration:7000
+            duration:700000
         });
 
     }
