@@ -220,12 +220,13 @@ button{
 {
     
     .menuBuilds{
-        height: auto;
+        height: 70vh;
         width: 80vw;
         left: 10vw;
         top: 18vh;
         justify-content: center;
         display:block;
+        overflow: scroll;
     }
     .menuBuilds section{
         width: 100%;
