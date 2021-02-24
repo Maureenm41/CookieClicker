@@ -86,15 +86,20 @@ header div p{
     }
 }
 
-/*param img planets et vaiseau*/
+/*param img planets et vaiseau
 img {
     display: block;
     padding-bottom: 10px;
     margin: auto;
 }
-
+*/
 #starship:active {
     transform: scale(1.1);
+}
+
+.starship{
+    display: block;
+    padding-left: 25vw;
 }
 
 #imgEarth {
@@ -123,14 +128,13 @@ img {
 }
 
 #imgSun {
-    width: 10vh;
+    width: 10vw;
     height: auto;
 }
 
 #imgSpaceship {
     width: 10vh;
     height: auto;
-    
 }
 main:first-child:first-child
 {
@@ -219,7 +223,11 @@ button{
         margin-left: 3%;
         padding-top: 0;
     }
-
+    img {
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
 }
 
 
