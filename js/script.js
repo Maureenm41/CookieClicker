@@ -1,8 +1,9 @@
-
 const ship = document.getElementById("starship");
-const pop = document.getElementById("pop").querySelector("p");
-const builds = document.getElementById("build").querySelectorAll("button");
-const upgrades = document.getElementById("upgrade").querySelectorAll("button");
+const pop = document.getElementById("pop");
+const builds = document.querySelectorAll(".button1");
+const textBu = document.querySelectorAll(".text1");
+const upgrades = document.querySelectorAll(".button2");
+const textUp = document.querySelectorAll(".text");
 const bonus = document.getElementById("bonus");
 
 
@@ -86,6 +87,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[0];
                 priceUp[0] = priceUp[0] *2;
+                textUp[0].innerHTML = priceUp[0];
             }
             break;
         case "Moon":
@@ -94,6 +96,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[1];
                 priceUp[1] = priceUp[1] *2;
+                textUp[1].innerHTML = priceUp[1];
             }
             break;
         case "Mars":
@@ -102,6 +105,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[2];
                 priceUp[2] = priceUp[2] *2;
+                textUp[2].innerHTML = priceUp[2];
             }
             break;
         case "Saturn":
@@ -110,6 +114,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[3];
                 priceUp[3] = priceUp[3] *2;
+                textUp[3].innerHTML = priceUp[3];
             }
             break;
         case "Jupiter":
@@ -118,6 +123,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[4];
                 priceUp[4] = priceUp[4] *2;
+                textUp[4].innerHTML = priceUp[4];
             }
             break;
         case "Sun":
@@ -126,6 +132,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[5];
                 priceUp[5] = priceUp[5] *2;
+                textUp[5].innerHTML = priceUp[5];
             }
             break;
         case "Starship":
@@ -134,6 +141,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[6];
                 priceUp[6] = priceUp[6] *2;
+                textUp[6].innerHTML = priceUp[6];
             }
         case "Auto":
             if(pop.innerHTML >= priceUp[7]){
@@ -141,6 +149,7 @@ function upCheck(planet){
                 console.log("add");
                 pop.innerHTML -= priceUp[7];
                 priceUp[7] = priceUp[7] *1.5;
+                textUp[7].innerHTML = priceUp[7];
             }
     }
 }
@@ -148,8 +157,7 @@ function upCheck(planet){
 // upgrades buttons
 upgrades.forEach(upgrade => {
     upgrade.addEventListener("click", ()=> {
-        upCheck(upgrade.getAttribute("attribute"));
-        console.log(upgrade.getAttribute("attribute"));
+        upCheck(upgrade.innerHTML);
     })
 })
 
@@ -171,41 +179,29 @@ function calPeoSec(){
 }
 
 setInterval( function(){
+    console.log(pop.innerHTML)
     pop.innerHTML= new Number(pop.innerHTML) + (calPeoSec()/10);
     pop.innerHTML= new Number(pop.innerHTML) + (auto*click)/50;
 },100);
 
-setInterval(()=>{
-for(let index = 0; index < price.length; index++) {
-    if(price[index]<pop.innerHTML){
-        builds[index].disabled = false;
-    } else {
-        builds[index].disabled = true;
-    }
-}
-for (let index = 0; index < priceUp.length; index++) {
-    if(priceUp[index]<pop.innerHTML){
-        upgrades[index].disabled = false;
-    } else {
-        upgrades[index].disabled = true;
-    }
-}},1);
 
 setInterval(()=>{
-    if(true){
-        bonus.animate([
-            {transform: `translate(-5vw,${Math.floor(Math.random()*50)-50}vh)`},
-            {transform: `translate(50vw,${Math.floor(Math.random()*50)-50}vh)`},
-            {transform: `translate(25vw,${Math.floor(Math.random()*50)-50}vh)`},
-            {transform: `translate(105vw,${Math.floor(Math.random()*20)-30}vh)`}
-        ],{
-            duration:2000
-        });
-        /* bonus.animate([
-            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
-            {transform: `translateY(${Math.floor(Math.random()*500)+250}px)`},
-        ],{
-            duration:5000
-        });*/
+    for(let index = 0; index < price.length; index++) {
+        console.log(upgrades[index])
+        if(price[index]<=pop.innerHTML){
+            builds[index].disabled = false;
+            builds[index].style.opacity = "1"
+        } else {
+            builds[index].disabled = true;
+            builds[index].style.opacity = "0.5"
+        }
     }
-},2000)
+    for (let index = 0; index < priceUp.length; index++) {
+        if(priceUp[index]<=pop.innerHTML){
+            upgrades[index].disabled = false;
+            builds[index].style.opacity = "1"
+        } else {
+            upgrades[index].disabled = true;
+            upgrades[index].style.opacity = "0.5"
+        }
+}},1);

@@ -1,95 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/a5a0a43d69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>Space Cookie</title>
 </head>
+
 <body>
     <header>
-        <h1>Space Cookie</h1>
-        <button>
-
-        </button>
+        <h1 class="glow">
+            Space Cookie
+        </h1>
+        <span></span>
+        <div>
+            <p id="pop">0</p>
+            <p id="popS">0</p>
+            <p id="bonus">0</p>
+        </div>
     </header>
+    
     <main>
-        <section class="space" id="space">
-            <section class="planets" id="planets">
-                <img src="" alt="Sun">
-                <img src="" alt="Jupiter">
-                <img src="" alt="Saturn">
-                <img src="" alt="Mars">
-                <img src="" alt="Moon">
-                <img src="" alt="Earth">
+        <section class="container-md-6 test1">
+            <section class="row">
+                <section class="space col-md-6" id="space">
+                    <section class="planets" id="planets">
+                        <img src="./assets/Sun1.png" id="imgSun" alt="Sun">
+                        <img src="./assets/jupiter.png" id="imgJupiter" alt="Jupiter">
+                        <img src="./assets/saturn.png" id="imgSaturn" alt="Saturn">
+                        <img src="./assets/mars.png" id="imgMars" alt="Mars" >
+                        <img src="./assets/moon.png" id="imgMoon" alt="Moon">
+                        <img src="./assets/earth.png" id="imgEarth" alt="Earth">
+                    </section>
+                    <div class="starship" id="starship">
+                        <img src="./assets/spaceship.png" id="imgSpaceship" alt="ship">
+                    </div>
+                    <span class="pop" id="pop"><p></p></span>
+                </section>
             </section>
-            <div class="starship" id="starship">
-                <img src="assets/spaceship.png" alt="ship" width="5%">
-            </div>
-            <span  class="pop" id="pop"><p>0</p></span>
-
-
-        </section>
-        <section class="build" id="build"> <!-- bloc de boutons-->
-            <ul>
-                <li>
-                    <button class="button">Earth</button>
-                </li>
-                <li>
-                    <button class="button">Moon</button>
-                </li>
-                <li>
-                    <button class="button">Mars</button>
-                </li>
-                <li>
-                    <button class="button">Saturn</button>
-                </li>
-                <li>
-                    <button class="button">Jupiter</button>
-                </li>
-                <li>
-                    <button class="button">Sun</button>
-                </li>
-            </ul>
-
-            <section class="upgrade" id="upgrade"> <!--bloc visualisation upgrade-->
-                <ul>
-                    <li>
-                        <button class="button" attribute="Earth">Upgrade Earth's technology</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Moon">Upgrade Moon's technology</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Mars">Upgrade Mars's technology</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Saturn">Upgrade Saturn's technology</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Jupiter">Upgrade Jupiter's technology</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Sun">Upgrade Sun's technology</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Starship">Upgrade Starship's reactor</button>
-                    </li>
-                    <li>
-                        <button class="button" attribute="Auto">Upgrade the pop you find in space</button>
-                    </li>
-                </ul>
+            <div class="menuBuilds">
+                <section id="build">
+                    <h3>Unlock planet</h3>
+                    <div class="build">
+                        <button class="button1">Earth</button>
+                        <p class="text1">10</p>
+                    </div>
+                    
+                    <div class="build">
+                        <button class="button1">Moon</button>
+                        <p class="text1">1 K</p>
+                    </div>
+                    
+                    
+                    <div class="build">
+                        <button class="button1">Mars</button>
+                        <p class="text1">10 K</p>
+                    </div>
+                    
+                    
+                    <div class="build"> 
+                        <button class="button1">Saturn</button>
+                        <p class="text1">100 K</p>
+                    </div>
+                    
+                    
+                    <div class="build">
+                        <button class="button1">Jupiter</button>
+                        <p class="text1">1 M</p>
+                    </div>
+                    
+                    
+                    <div class="build">
+                        <button class="button1">Sun</button>
+                        <p class="text1">10 M</p>
+                    </div>
+                </section>
+                <section id="upgrade">
+                    <h3>Unlock update</h3>
+                    <div class="build">
+                        <button class="button2">Earth</button>
+                        <p class="text2">100</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Moon</button>
+                        <p class="text2"></p>10 k</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Mars</button>
+                        <p class="text2"></p>100 K</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Saturn</button>
+                        <p class="text2"></p>1 M</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Jupiter</button>
+                        <p class="text2"></p>10 M</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Sun</button>
+                        <p class="text2"></p>100 M</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Starship</button>
+                        <p class="text2"></p>1 B</p>
+                    </div> 
+                    <div class="build">
+                        <button class="button2">Auto</button>
+                        <p class="text2"></p>10 B</p>
+                    </div> 
             </section>
-        </section>
-        <img id="bonus" src="/assets/Bonus.png" alt="Bonus spaceship" width="7%">
-        <style>
-            #bonus{
-                position: absolute;
-            }
-        </style>
+        </div>
+    </section>
+        <img id="bonus" src="" alt="">
     </main>
     <footer>
-        <div> </div>
     </footer>
 </body>
 <script src="js/script.js"></script>
