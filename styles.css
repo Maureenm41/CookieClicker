@@ -5,6 +5,7 @@ body {
     background-image: url("./assets/galaxy.jpg");
     font-family: 'Orbitron', sans-serif;
     color: white;
+    width: 100vw;
 }
 
 p{
@@ -21,6 +22,7 @@ p{
 header{
     background-color: #211f1f;
     margin-bottom: 5vh;
+    width: 100vw;
 }
 
 header span{
@@ -96,37 +98,42 @@ img {
 #imgEarth {
     width: 6vh;
     height: auto;
+    display: none;
 }
 
 #imgMoon {
     width: 5vh;
     height: auto;
+    display: none;
 }
 
 #imgMars {
     width: 7vh;
     height: auto;
+    display: none;
 }
 
 #imgSaturn {
     width: 8vh;
     height: auto;
+    display: none;
 }
 
 #imgJupiter {
     width: 9vh;
     height: auto;
+    display: none;
 }
 
 #imgSun {
     width: 10vh;
     height: auto;
+    display: none;
 }
 
 #imgSpaceship {
     width: 10vh;
     height: auto;
-    
 }
 main:first-child:first-child
 {
@@ -147,7 +154,7 @@ main:first-child:first-child
     top: 8vh;
     right: 5vw;
     display: flex;
-    padding: 5vh 0;
+    padding: 10vh 0;
     margin-top: 5vh;
 }
 
@@ -202,7 +209,7 @@ button{
         left: 10vw;
         top: 18vh;
         justify-content: center;
-        display:block;
+        display:none;
     }
     .menuBuilds section{
         width: 100%;
