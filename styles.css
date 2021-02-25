@@ -251,6 +251,7 @@ button {
         top: 18vh;
         justify-content: center;
         display: none;
+        overflow:scroll;
     }
     .menuBuilds section {
         width: 100%;
