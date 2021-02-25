@@ -2,12 +2,15 @@
     padding: 0;
     margin: 0;
 }
+
 @font-face {
     font-family: 'Luckiest Guy';
     src: url("./assets/font/LuckiestGuy-Regular.ttf") format("truetype");
 }
 
+
 /*Config général*/
+
 body {
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
@@ -17,56 +20,56 @@ body {
     height: 100vh;
 }
 
-p{
+p {
     text-align: center;
     margin-top: 0.01vh;
     padding-top: 1vh;
-    margin-bottom: 4.22vh ;
-    text-shadow: 2px 2px 5px rgb(255, 255, 255) ;
+    margin-bottom: 4.22vh;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 
 /*param header*/
 
-header{
+header {
     margin-bottom: 5vh;
+    width: 100vw;
 }
 
-header span{
+header span {
     display: none;
 }
 
-header div{
+header div {
     display: flex;
     position: absolute;
     right: 0;
     width: 50%;
-    top:1%
+    top: 1%
 }
 
-header div p{
+header div p {
     margin-right: 1%;
     width: 33%;
     margin-top: 0.8vw;
 }
 
-@media all  and (max-width:770px)
-{
-    header div{
+@media all and (max-width:770px) {
+    header div {
         width: 100%;
         display: flex;
         position: relative;
         right: 0;
     }
-    header div p{
+    header div p {
         width: 100%;
     }
-    .glow{
-        font-size:2em;
+    .glow {
+        font-size: 2em;
         padding-top: 3vw;
     }
-    header span{
-        display:block;
+    header span {
+        display: block;
         position: absolute;
         right: 5%;
         top: 3vw;
@@ -76,7 +79,9 @@ header div p{
     }
 }
 
+
 /* effet sur le titre de la page*/
+
 .glow {
     text-align: left;
     animation: glow 1s ease-in-out infinite alternate;
@@ -89,11 +94,11 @@ header div p{
     from {
         text-shadow: 0 0 10px #ffffff, 0 0 20px #d4cbcb, 0 0 30px #969693, 0 0 40px #70706f, 0 0 50px #969693, 0 0 60px #70706F, 0 0 70px #70706F;
     }
-
     to {
         text-shadow: 0 0 20px #ffffff, 0 0 30px #8a8888, 0 0 40px #3c3c3c, 0 0 50px #211f1f, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
     }
 }
+
 
 /*param img planets et vaiseau*/
 
@@ -101,7 +106,7 @@ header div p{
     transform: scale(1.1);
 }
 
-.starship{
+.starship {
     display: block;
     padding-left: 25vw;
 }
@@ -111,6 +116,7 @@ header div p{
     height: auto;
     margin-left: 1vh;
     margin-top: 10vh;
+    display: none;
 }
 
 #imgMoon {
@@ -118,14 +124,15 @@ header div p{
     height: auto;
     margin-left: 15vh;
     margin-bottom: 3vh;
+    display: none;
 }
-
 
 #imgMars {
     width: 7vh;
     height: auto;
     margin-left: 6vh;
     margin-top: 10vh;
+    display: none;
 }
 
 #imgSaturn {
@@ -133,6 +140,7 @@ header div p{
     height: auto;
     margin-left: 3vh;
     margin-bottom: 10vh;
+    display: none;
 }
 
 #imgJupiter {
@@ -140,15 +148,16 @@ header div p{
     height: auto;
     margin-left: 3vh;
     margin-top: 10vh;
+    display: none;
 }
 
 #imgSun {
     width: 15vw;
     height: auto;
+    display: none;
 }
 
-.planets
-{
+.planets {
     margin-top: 20vh;
 }
 
@@ -156,16 +165,18 @@ header div p{
     width: 10vh;
     height: auto;
 }
-main:first-child:first-child
-{
+
+main:first-child:first-child {
     display: block;
 }
 
 
 /* param du menu des amélioration*/
 
+
 /*param de menu general*/
-.menuBuilds{
+
+.menuBuilds {
     background-color: #11000fbd;
     border: #ffffff solid 5px;
     border-radius: 15px;
@@ -175,17 +186,21 @@ main:first-child:first-child
     top: 8vh;
     right: 5vw;
     display: flex;
-    padding: 5vh 0;
+    padding: 10vh 0;
     margin-top: 5vh;
 }
 
+
 /*taille des deux sections*/
-.menuBuilds section{
+
+.menuBuilds section {
     width: 49%;
 }
 
+
 /* param du titre des sections*/
-.menuBuilds h3{
+
+.menuBuilds h3 {
     margin-bottom: 10%;
     font-size: 2.5vh;
     text-align: center;
@@ -193,8 +208,10 @@ main:first-child:first-child
     text-shadow: 2px 2px 5px rgb(255, 6, 6);
 }
 
+
 /* param de la div d'une amélioration (build)*/
-.build{
+
+.build {
     display: flex;
     margin-left: 2vw;
     height: 10%;
@@ -202,8 +219,10 @@ main:first-child:first-child
     margin-bottom: 5%;
 }
 
+
 /*param des boutton du build*/
-button{
+
+button {
     font-family: "Luckiest Guy";
     background: none;
     color: white;
@@ -214,37 +233,37 @@ button{
     height: 100%;
 }
 
+
 /*param du texte du build*/
-.build p{
+
+.build p {
     margin-left: 3%;
 }
 
+
 /*config de la version mobil du menu des amélioration (taille et position*/
-@media all  and (max-width:770px)
-{
-    
-    .menuBuilds{
+
+@media all and (max-width:770px) {
+    .menuBuilds {
         height: 70vh;
         width: 80vw;
         left: 10vw;
         top: 18vh;
         justify-content: center;
-        display:block;
-        overflow: scroll;
+        display: none;
     }
-    .menuBuilds section{
+    .menuBuilds section {
         width: 100%;
     }
-    button{
+    button {
         width: 50%;
         height: 100%;
     }
-    .build p{
+    .build p {
         margin-left: 3%;
         padding-top: 0;
     }
-    .planets
-    {
+    .planets {
         margin-top: 1vh;
     }
     #imgEarth {
@@ -254,7 +273,6 @@ button{
         padding-bottom: 10px;
         margin: auto;
     }
-
     #imgMoon {
         width: 5vh;
         height: auto;
@@ -262,8 +280,6 @@ button{
         padding-bottom: 10px;
         margin: auto;
     }
-
-
     #imgMars {
         width: 7vh;
         height: auto;
@@ -271,7 +287,6 @@ button{
         padding-bottom: 10px;
         margin: auto;
     }
-
     #imgSaturn {
         width: 13vh;
         height: auto;
@@ -279,7 +294,6 @@ button{
         padding-bottom: 10px;
         margin: auto;
     }
-
     #imgJupiter {
         width: 9vh;
         height: auto;
@@ -287,7 +301,6 @@ button{
         padding-bottom: 10px;
         margin: auto;
     }
-
     #imgSun {
         width: 15vw;
         height: auto;
@@ -295,7 +308,7 @@ button{
         padding-bottom: 10px;
         margin: auto;
     }
-    .starship{
+    .starship {
         display: block;
         padding-left: 42vw;
         display: block;
@@ -304,16 +317,12 @@ button{
     }
 }
 
-footer
-{
+footer {
     margin: auto;
     display: flex;
     padding-left: 3vh;
 }
 
-.name
-{
+.name {
     padding-left: 3vh;
 }
-
-

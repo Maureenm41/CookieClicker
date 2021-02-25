@@ -19,9 +19,9 @@
         </h1>
 
         <div>
-            <p class="pop">0  pop</p>
-            <p class="popS">0  pop/s</p>
-            <p class="bonus">0</p>
+            <p id="pop">0</p>
+            <p id="popS">0</p>
+            <p id="bonus">0</p>
         </div>
     </header>
     
@@ -44,75 +44,88 @@
                 </section>
             </section>
             <div class="menuBuilds">
-                <section>
+                <section id="build">
                     <h3>Unlock planet</h3>
                     <div class="build">
                         <button class="button1">Earth</button>
-                        <p>patate1</p>
+                        <p class="text1">10</p>
                     </div>
                     
                     <div class="build">
                         <button class="button1">Moon</button>
-                        <p>patate1</p>
+                        <p class="text1">1 K</p>
                     </div>
                     
                     
                     <div class="build">
                         <button class="button1">Mars</button>
-                        <p>patate1</p>
+                        <p class="text1">10 K</p>
                     </div>
                     
                     
                     <div class="build"> 
                         <button class="button1">Saturn</button>
-                        <p>patate1</p>
+                        <p class="text1">100 K</p>
                     </div>
                     
                     
                     <div class="build">
                         <button class="button1">Jupiter</button>
-                        <p>patate1</p>
+                        <p class="text1">1 M</p>
                     </div>
                     
                     
                     <div class="build">
                         <button class="button1">Sun</button>
-                        <p>patate1</p>
+                        <p class="text1">10 M</p>
                     </div>
                 </section>
-                <section>
+                <section id="upgrade">
                     <h3>Unlock update</h3>
                     <div class="build">
-                        <button class="button1">Earth</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Earth</button>
+                        <p class="text2">100</p>
                     </div>
                     <div class="build">
-                        <button class="button1">Moon</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Moon</button>
+                        <p class="text2">10 k</p>                 
                     </div>
                     <div class="build">
-                        <button class="button1">Mars</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Mars</button>
+                        <p class="text2">100 K</p>
                     </div>
                     <div class="build">
-                        <button class="button1">Saturn</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Saturn</button>
+                        <p class="text2">1 M</p>
                     </div>
                     <div class="build">
-                        <button class="button1">Jupiter</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Jupiter</button>
+                        <p class="text2">10 M</p>
                     </div>
                     <div class="build">
-                        <button class="button1">Sun</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Sun</button>
+                        <p class="text2">100 M</p>
                     </div>
                     <div class="build">
-                        <button class="button1">Starship</button>
-                        <p>patate1</p>
+                        <button class="button2">Up Starship</button>
+                        <p class="text2">1000</p>
+                    </div> 
+                    <div class="build">
+                        <button class="button2">+ click Auto</button>
+                        <p class="text2">150</p>
                     </div> 
             </section>
-        </div> 
+        </div>
     </section>
+        <img id="bonusMove" src="assets/Bonus.png" alt="">
+        <style>
+            #bonusMove{
+                position: absolute;
+                left: -12%;
+                top:50vh;
+                width: 12%;
+            }
+        </style>
     </main>
     <footer>
         <p class="name">Jazzon Laurent</p>
@@ -122,5 +135,5 @@
         <p class="name">Maureen Marchal </p>
     </footer>
 </body>
-
+<script src="js/script.js"></script>
 </html>
