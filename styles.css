@@ -304,4 +304,16 @@ button{
     }
 }
 
+footer
+{
+    margin: auto;
+    display: flex;
+    padding-left: 3vh;
+}
+
+.name
+{
+    padding-left: 3vh;
+}
+
 
