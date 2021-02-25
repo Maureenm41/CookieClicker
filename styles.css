@@ -2,7 +2,9 @@
 
 /*Config général*/
 body {
-    background-image: url("./assets/galaxy.jpg");
+    background-image: url("./assets/fondt.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Orbitron', sans-serif;
     color: white;
     width: 100vw;
@@ -145,9 +147,9 @@ main:first-child:first-child
 
 /*param de menu general*/
 .menuBuilds{
-    background-color: #211f1fe1;
+    background-color: #11000fbd;
     border: #ffffff solid 5px ;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 40vw;
     height: 80vh;
     position: absolute;

@@ -10,6 +10,8 @@ const bonusMove = document.getElementById("bonusMove");
 const burger = document.querySelector("header").querySelector("span");
 const menuBuilds = document.querySelector(".menuBuilds");
 const planetsImg = document.querySelector(".planets").querySelectorAll("img");
+const audioClick = new Audio('./assets/clic.wav');
+const audioship = new Audio('./assets/ship.wav');
 
 let click = 1000;
 
@@ -224,19 +226,22 @@ upgrades.forEach(upgrade => {
 ship.addEventListener("click", ()=>{
     pop.innerHTML= numCheck(popA + click);
     popA += click;
+    audioClick.play();
 });
+let bo = true;
 
 bonusMove.addEventListener("click",()=>{
-    console.log(click)
-    click = click*3;
-    console.log(click)
-    decompte();
-    setInterval(function(){click = click/3},30000);
-
-    console.log(click)
+    if(bo == true){
+        bo = false;
+        click = click*3;
+        decompte();
+        setInterval(function(){click = click/3},30000);
+        console.log(click)
+    }
 })
 
 let time = 30;
+
 
 function decompte(){
     bonus.innerHTML = time+" S";
@@ -247,6 +252,7 @@ function decompte(){
             decompte();
         },1000);
     }else{
+        bo = true;
         time = 30;
     }
 }
@@ -293,13 +299,14 @@ setInterval(()=>{
 
 setInterval(()=>{
     if(Math.floor(Math.random()*10)%3 == 0){
+        audioship.play();
         bonusMove.animate([
             {transform: `translate(-5vw,${Math.floor(Math.random()*50)-50}vh)`},
             {transform: `translate(75vw,${Math.floor(Math.random()*50)-50}vh)`},
             {transform: `translate(25vw,${Math.floor(Math.random()*50)-50}vh) scaleX(-1)`},
-            {transform: `translate(105vw,${Math.floor(Math.random()*20)-30}vh) scaleX(1)`}
+            {transform: `translate(102vw,${Math.floor(Math.random()*20)-30}vh) scaleX(1)`}
         ],{
-            duration:7000
+            duration:5000
         });
 
     }
