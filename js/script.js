@@ -13,7 +13,7 @@ const planetsImg = document.querySelector(".planets").querySelectorAll("img");
 const audioClick = new Audio('./assets/clic.wav');
 const audioship = new Audio('./assets/ship.wav');
 
-let click = 1000;
+let click = 1;
 
 let price = [10,1000,10000,100000,1000000,10000000]; // price of planets
 let priceUp = [price[0]*10,price[1]*10,price[2]*10,price[3]*10,price[4]*10,price[5]*10,1000,150]; // price of planets and ship upgrades
