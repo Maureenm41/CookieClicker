@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/a5a0a43d69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Space Cookie</title>
 </head>
+
 <body>
+    <header>
+        <h1 class="glow">
+            Space Cookie
+        </h1>
+
+        <div>
+            <p id="pop">0</p>
+            <p id="popS">0</p>
+            <p id="bonus">0</p>
+        </div>
+    </header>
     
+    <main>
+        <section class="container-md-6 test1">
+            <section class="row">
+                <section class="space col-md-6" id="space">
+                    <section class="planets" id="planets">
+                        <img src="./assets/sun.svg" id="imgSun" alt="Sun">
+                        <img src="./assets/jupiter.svg" id="imgJupiter" alt="Jupiter">
+                        <img src="./assets/sarturn.svg" id="imgSaturn" alt="Saturn">
+                        <img src="./assets/mars.svg" id="imgMars" alt="Mars" >
+                        <img src="./assets/moon.svg" id="imgMoon" alt="Moon">
+                        <img src="./assets/earth.svg" id="imgEarth" alt="Earth">
+                    </section>
+                    <div class="starship" id="starship">
+                        <img src="./assets/spaceship.png" id="imgSpaceship" alt="ship">
+                    </div>
+                    <span class="pop" id="pop"><p></p></span>
+                </section>
+            </section>
+            <div class="menuBuilds">
+                <section id="build">
+                    <h3>Unlock planet</h3>
+                    <div class="build">
+                        <button class="button1">Earth</button>
+                        <p class="text1">10</p>
+                    </div>
+                    
+                    <div class="build">
+                        <button class="button1">Moon</button>
+                        <p class="text1">1 K</p>
+                    </div>
+                    
+                    
+                    <div class="build">
+                        <button class="button1">Mars</button>
+                        <p class="text1">10 K</p>
+                    </div>
+                    
+                    
+                    <div class="build"> 
+                        <button class="button1">Saturn</button>
+                        <p class="text1">100 K</p>
+                    </div>
+                    
+                    
+                    <div class="build">
+                        <button class="button1">Jupiter</button>
+                        <p class="text1">1 M</p>
+                    </div>
+                    
+                    
+                    <div class="build">
+                        <button class="button1">Sun</button>
+                        <p class="text1">10 M</p>
+                    </div>
+                </section>
+                <section id="upgrade">
+                    <h3>Unlock update</h3>
+                    <div class="build">
+                        <button class="button2">Up Earth</button>
+                        <p class="text2">100</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Up Moon</button>
+                        <p class="text2">10 k</p>                 
+                    </div>
+                    <div class="build">
+                        <button class="button2">Up Mars</button>
+                        <p class="text2">100 K</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Up Saturn</button>
+                        <p class="text2">1 M</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Up Jupiter</button>
+                        <p class="text2">10 M</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Up Sun</button>
+                        <p class="text2">100 M</p>
+                    </div>
+                    <div class="build">
+                        <button class="button2">Up Starship</button>
+                        <p class="text2">1000</p>
+                    </div> 
+                    <div class="build">
+                        <button class="button2">+ click Auto</button>
+                        <p class="text2">150</p>
+                    </div> 
+            </section>
+        </div>
+    </section>
+        <img id="bonusMove" src="assets/Bonus.png" alt="">
+        <style>
+            #bonusMove{
+                position: absolute;
+                left: -12%;
+                top:50vh;
+                width: 12%;
+            }
+        </style>
+    </main>
+    <footer>
+        <p class="name">Jazzon Laurent</p>
+        <p class="name">Laurent Degimbe</p>
+        <p class="name">Jérémy Mertens</p>
+        <p class="name">Arnaud Want</p>
+        <p class="name">Maureen Marchal </p>
+    </footer>
 </body>
+<script src="js/script.js"></script>
 </html>
