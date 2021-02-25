@@ -1,10 +1,20 @@
-@import url(https://fonts.googleapis.com/css2?family=Orbitron&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url("./assets/font/LuckiestGuy-Regular.ttf") format("truetype");
+}
 
 /*Config général*/
 body {
-    background-image: url("./assets/galaxy.jpg");
-    font-family: 'Orbitron', sans-serif;
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Luckiest Guy', sans-serif;
     color: white;
+    height: 100vh;
 }
 
 p{
@@ -19,7 +29,6 @@ p{
 /*param header*/
 
 header{
-    background-color: #211f1f;
     margin-bottom: 5vh;
 }
 
@@ -86,13 +95,8 @@ header div p{
     }
 }
 
-/*param img planets et vaiseau
-img {
-    display: block;
-    padding-bottom: 10px;
-    margin: auto;
-}
-*/
+/*param img planets et vaiseau*/
+
 #starship:active {
     transform: scale(1.1);
 }
@@ -162,9 +166,9 @@ main:first-child:first-child
 
 /*param de menu general*/
 .menuBuilds{
-    background-color: #211f1fe1;
-    border: #ffffff solid 5px ;
-    border-radius: 5px;
+    background-color: #11000fbd;
+    border: #ffffff solid 5px;
+    border-radius: 15px;
     width: 40vw;
     height: 80vh;
     position: absolute;
@@ -200,7 +204,7 @@ main:first-child:first-child
 
 /*param des boutton du build*/
 button{
-    font-family: "Orbitron";
+    font-family: "Luckiest Guy";
     background: none;
     color: white;
     font-size: 100%;
@@ -239,16 +243,10 @@ button{
         margin-left: 3%;
         padding-top: 0;
     }
-    /*
-    img {
-        display: block;
-        padding-bottom: 10px;
-        margin-left: 1vw;
-        margin-bottom: 1vh;
-        margin-right: 5vw;
+    .planets
+    {
         margin-top: 1vh;
     }
-     */
     #imgEarth {
         width: 6vh;
         height: auto;
