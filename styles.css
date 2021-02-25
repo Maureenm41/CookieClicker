@@ -1,10 +1,20 @@
-@import url(https://fonts.googleapis.com/css2?family=Orbitron&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url("./assets/font/LuckiestGuy-Regular.ttf") format("truetype");
+}
 
 /*Config général*/
 body {
-    background-image: url("./assets/galaxy.jpg");
-    font-family: 'Orbitron', sans-serif;
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Luckiest Guy', sans-serif;
     color: white;
+    height: 100vh;
 }
 
 p{
@@ -19,7 +29,6 @@ p{
 /*param header*/
 
 header{
-    background-color: #211f1f;
     margin-bottom: 5vh;
 }
 
@@ -87,46 +96,65 @@ header div p{
 }
 
 /*param img planets et vaiseau*/
-img {
+
+#starship:active {
+    transform: scale(1.1);
+}
+
+.starship{
     display: block;
-    padding-bottom: 10px;
-    margin: auto;
+    padding-left: 25vw;
 }
 
 #imgEarth {
     width: 6vh;
     height: auto;
+    margin-left: 1vh;
+    margin-top: 10vh;
 }
 
 #imgMoon {
     width: 5vh;
     height: auto;
+    margin-left: 15vh;
+    margin-bottom: 3vh;
 }
+
 
 #imgMars {
     width: 7vh;
     height: auto;
+    margin-left: 6vh;
+    margin-top: 10vh;
 }
 
 #imgSaturn {
-    width: 8vh;
+    width: 13vh;
     height: auto;
+    margin-left: 3vh;
+    margin-bottom: 10vh;
 }
 
 #imgJupiter {
     width: 9vh;
     height: auto;
+    margin-left: 3vh;
+    margin-top: 10vh;
 }
 
 #imgSun {
-    width: 10vh;
+    width: 15vw;
     height: auto;
+}
+
+.planets
+{
+    margin-top: 20vh;
 }
 
 #imgSpaceship {
     width: 10vh;
     height: auto;
-    
 }
 main:first-child:first-child
 {
@@ -138,9 +166,9 @@ main:first-child:first-child
 
 /*param de menu general*/
 .menuBuilds{
-    background-color: #211f1fe1;
-    border: #ffffff solid 5px ;
-    border-radius: 5px;
+    background-color: #11000fbd;
+    border: #ffffff solid 5px;
+    border-radius: 15px;
     width: 40vw;
     height: 80vh;
     position: absolute;
@@ -176,7 +204,7 @@ main:first-child:first-child
 
 /*param des boutton du build*/
 button{
-    font-family: "Orbitron";
+    font-family: "Luckiest Guy";
     background: none;
     color: white;
     font-size: 100%;
@@ -191,18 +219,18 @@ button{
     margin-left: 3%;
 }
 
-
 /*config de la version mobil du menu des amélioration (taille et position*/
 @media all  and (max-width:770px)
 {
     
     .menuBuilds{
-        height: auto;
+        height: 70vh;
         width: 80vw;
         left: 10vw;
         top: 18vh;
         justify-content: center;
         display:block;
+        overflow: scroll;
     }
     .menuBuilds section{
         width: 100%;
@@ -215,7 +243,77 @@ button{
         margin-left: 3%;
         padding-top: 0;
     }
+    .planets
+    {
+        margin-top: 1vh;
+    }
+    #imgEarth {
+        width: 6vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
 
+    #imgMoon {
+        width: 5vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+
+    #imgMars {
+        width: 7vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgSaturn {
+        width: 13vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgJupiter {
+        width: 9vh;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+
+    #imgSun {
+        width: 15vw;
+        height: auto;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+    .starship{
+        display: block;
+        padding-left: 42vw;
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+}
+
+footer
+{
+    margin: auto;
+    display: flex;
+    padding-left: 3vh;
+}
+
+.name
+{
+    padding-left: 3vh;
 }
 
 
