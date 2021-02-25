@@ -70,7 +70,6 @@ function check(planet){
                 price[0] = price[0] *1.5;
                 textBu[0].innerHTML = numCheck(price[0]);
                 planetsImg[5].style.display = "block";
-                builds[0].innerHTML = "+ colonies Earth";
             }
             break;
         case "Moon":
@@ -81,7 +80,6 @@ function check(planet){
                 price[1] = price[1] *1.5;
                 textBu[1].innerHTML = numCheck(price[1]);
                 planetsImg[4].style.display = "block";
-                builds[1].innerHTML = "+ colonies Moon";
             }
             break;
         case "Mars":
@@ -92,7 +90,6 @@ function check(planet){
                 price[2] = price[2] *1.5;
                 textBu[2].innerHTML = numCheck(price[2]);
                 planetsImg[3].style.display = "block";
-                builds[2].innerHTML = "+ colonies Mars";
             }
             break;
         case "Saturn":
@@ -103,7 +100,6 @@ function check(planet){
                 price[3] = price[3] *1.5;
                 textBu[3].innerHTML = numCheck(price[3]);
                 planetsImg[2].style.display = "block";
-                builds[3].innerHTML = "+ colonies Saturn";
             }
             break;
         case "Jupiter":
@@ -114,7 +110,6 @@ function check(planet){
                 price[4] = price[4] *1.5;
                 textBu[4].innerHTML = numCheck(price[4]);
                 planetsImg[1].style.display = "block";
-                builds[4].innerHTML = "+ colonies Jupiter";
             }
             break;
         case "Sun":
@@ -125,7 +120,6 @@ function check(planet){
                 price[5] = price[5] *1.5;
                 textBu[5].innerHTML = numCheck(price[5]);
                 planetsImg[0].style.display = "block";
-                builds[5].innerHTML = "+ colonies Sun";
             }
             break;
     }
